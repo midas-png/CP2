@@ -1,0 +1,12 @@
+<nav class="navbar_wrapper">
+    <div class="router_links_wrapper">
+        <a routerLink="/" class="navbar_logo">MidasHand</a>
+        <a routerLink="/">Home</a>
+        <div class="dropdown">
+            <button class="drop_btn">Products</button>
+            <div class="dropdown_content" *ngFor="let route of routes">
+                <a routerLink="tomatoes/{{route.id}}">{{route.name}}</a>
+            </div>
+        </div>
+    </div>
+</nav>
